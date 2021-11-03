@@ -1,0 +1,21 @@
+.footerContent {
+  background-color: #9d9c9c;
+  h3 {
+    margin: 0;
+  }
+  ::before {
+    background-image: url("../../public/images/biking.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+.titleLogo {
+  display: flex;
+}
+.socialIcons {
+  display: flex;
+  // flex-direction: column;
+  a {
+    margin-right: 30px;
+  }
+}
