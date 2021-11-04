@@ -1,0 +1,30 @@
+.container {
+  border: solid black 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.cardDescription {
+  text-align: center;
+}
+.cardTitle {
+  color: #f1a32d;
+}
+
+.cardButton {
+  background-color: #f1a32d;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+@media screen and (min-width: 600px) {
+  .container {
+    margin-right: 10px;
+    margin-bottom: 20px;
+  }
+}

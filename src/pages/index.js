@@ -1,5 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
+import Hero from "../../components/Hero/Hero";
+import TrackProgress from "../../components/TrackProgress/TrackProgress";
+import SetGoals from "../../components/SetGoals/SetGoals";
 // import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,9 +14,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <main></main>
-
-      <footer></footer>
+      <main>
+        <Hero />
+        <div className="cards">
+          <TrackProgress />
+          <SetGoals />
+        </div>
+      </main>
     </div>
   );
 }

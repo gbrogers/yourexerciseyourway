@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media screen and (min-width: 600px) {
+  .cards {
+    flex-direction: row;
+  }
+}
