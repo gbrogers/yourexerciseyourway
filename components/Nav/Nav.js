@@ -1,6 +1,6 @@
 import styles from "./Nav.module.scss";
 import Link from "next/link";
-import Logo from "../../public/images/mtn_logo.png";
+import Logo from "../../public/images/mtn_logo_white.png";
 import Image from "next/image";
 
 export default function Nav() {
@@ -16,7 +16,7 @@ export default function Nav() {
               quality={100}
               className={styles.logo}
               width={75} //automatically provided
-              height={50} //automatically provided
+              height={75} //automatically provided
               blurDataURL="data:..." //automatically provided
               placeholder="blur" // Optional blur-up while loading
             />
