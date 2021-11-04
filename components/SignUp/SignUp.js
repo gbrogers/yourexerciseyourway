@@ -40,13 +40,13 @@ export default function SignUp() {
   }
 
   return (
-    <div className={`${styles.signup} page-layout`}>
+    <div className={styles.signup}>
       <form className={styles.signupForm} onSubmit={(e) => handleLogin(e)}>
         {/* <pre>{JSON.stringify(user, null, 2)}</pre> */}
         {/* {!user ? ( */}
         <div className={styles.contentContainer}>
           <h2>Welcome!</h2>
-          <h4>Sign Up to get started here.</h4>
+          <h4>Sign Up here to get started.</h4>
           <label>
             <p className={styles.fname}>First Name </p>
             <input
@@ -82,12 +82,12 @@ export default function SignUp() {
           >
             Sign Up
           </button>
-          <p className={styles.alternative}>
-            Already have an account?{" "}
-            <b>
+          <div className={styles.alternative}>
+            <p className={styles.alternativeWords}>Already have an account? </p>
+            <b className={styles.toLoginBtn}>
               <Link href="/login">Log in</Link>
             </b>
-          </p>
+          </div>
         </div>
         {/* ) : ( */}
         {/* <div className={styles.signedUp}>

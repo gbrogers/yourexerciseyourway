@@ -1,15 +1,51 @@
 .container {
-  background-image: url(../../public/images/excitement.jpg);
+  background-image: url(../../public/images/hero.jpg);
   height: 100vh;
-  background-color: aquamarine;
+  // background-color: aquamarine;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 30px;
+  // padding: 30px;
+}
+.overlay {
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+.heroContent {
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mainTitle {
+  margin: 0;
+  color: #f1a32d;
+  text-align: center;
+}
+.heroUnderTitle {
+  text-align: center;
 }
 .learnMoreBtn {
   background-color: #f4f4f4c2;
   border: none;
   padding: 7px 12px;
   border-radius: 5px;
+}
+
+@media screen and (min-width: 450px) {
+  .heroContent {
+    align-items: flex-start;
+    max-width: 700px;
+  }
+  .mainTitle,
+  .heroUnderTitle {
+    text-align: left;
+  }
 }
