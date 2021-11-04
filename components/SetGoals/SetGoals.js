@@ -17,7 +17,7 @@ export default function SetGoals() {
         blurDataURL="data:..." //automatically provided
         placeholder="blur" // Optional blur-up while loading
       />
-      <h3 className={styles.cardTitle}>Set Goals!</h3>
+      <h2 className={styles.cardTitle}>Set Goals</h2>
       <p className={styles.cardDescription}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.

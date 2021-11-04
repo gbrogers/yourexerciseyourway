@@ -14,6 +14,9 @@ a {
 * {
   box-sizing: border-box;
 }
+button:hover {
+  cursor: pointer;
+}
 .cards {
   display: flex;
   flex-direction: column;

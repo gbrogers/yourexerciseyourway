@@ -12,12 +12,12 @@ export default function TrackProgress() {
         // layout="fill"
         quality={100}
         className={styles.cardImg}
-        width={100} //automatically provided
+        width={130} //automatically provided
         height={100} //automatically provided
         blurDataURL="data:..." //automatically provided
         placeholder="blur" // Optional blur-up while loading
       />
-      <h3 className={styles.cardTitle}>Track Your Progess!</h3>
+      <h2 className={styles.cardTitle}>Track Your Progress</h2>
       <p className={styles.cardDescription}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
