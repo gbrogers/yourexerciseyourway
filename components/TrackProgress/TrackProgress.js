@@ -17,7 +17,7 @@ export default function TrackProgress() {
         blurDataURL="data:..." //automatically provided
         placeholder="blur" // Optional blur-up while loading
       />
-      <h2 className={styles.cardTitle}>Track Your Progress</h2>
+      <h2 className={styles.cardTitle}>Track Progress</h2>
       <p className={styles.cardDescription}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
