@@ -10,8 +10,24 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// model User {
-//   id Int @id
-//   email String
-//   password String
-// }
+model User {
+  id Int @id @default(autoincrement())
+  email String @db.VarChar(50)
+  password String
+  completedExercise CompletedExercise[]
+  notes Notes[]
+}
+model Notes {
+  id Int @id @default(autoincrement())
+  note String @db.VarChar(255)
+  password String @db.VarChar(50)
+  user User? @relation(fields: [id], references: [id])
+}
+model CompletedExercise {
+  id Int @id @default(autoincrement())
+  name String @db.VarChar(255)
+  time Int
+  date String @db.VarChar(50)
+  user User? @relation(fields: [id], references: [id])
+  
+}
