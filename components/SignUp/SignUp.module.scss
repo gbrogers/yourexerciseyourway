@@ -5,11 +5,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
   padding: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   color: white;
+  height: 90vh;
+
   input {
     padding: 10px;
     border-radius: 5px;

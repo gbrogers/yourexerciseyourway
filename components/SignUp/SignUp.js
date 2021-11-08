@@ -1,16 +1,14 @@
 import styles from "./SignUp.module.scss";
-import { useRef, useContext } from "react";
-// import prisma from "../lib/prisma";
+import { useRef, useState, useContext } from "react";
 import Link from "next/link";
-// import { UserContext } from "../../UserContext";
-// import { AuthContext } from "../../AuthContext";
-
-//make instance of prisma
-// let prisma = new prisma
+import { UserContext } from "../../src/UserContext";
+import { AuthContext } from "../../src/AuthContext";
 
 export default function SignUp() {
-  //   const { user, setUser } = useContext(null);
-  //   const { isAuth, setIsAuth } = useContext(false);
+  // const { user, setUser } = useContext(UserContext);
+  const [user, setUser] = useState({});
+  const [isAuth, setIsAuth] = useState(false);
+  // const { isAuth, setIsAuth } = useContext(AuthContext);
 
   const email = useRef();
   const password = useRef();
@@ -19,7 +17,7 @@ export default function SignUp() {
 
   async function handleLogin(e) {
     e.preventDefault();
-    console.log('submitted.')
+    console.log("submitted.");
 
     console.log(email.current.value);
     console.log(password.current.value);
@@ -33,22 +31,22 @@ export default function SignUp() {
 
     console.log({ credentials });
 
-
-
-    // await axios
-    //   .post("/api/authenticate/signup", credentials)
-    //   .then((res) => {
-    //     // console.log(res.data);
-    //     setUser(res.data);
-    //     setIsAuth(true);
-    //   })
-    //   .catch((error) => console.log(error));
+    const user = await fetch("/api/signup")
+      .then(async (res) => {
+        console.log(res);
+        const data = await res.json();
+        console.log(data);
+        setUser(data);
+        setIsAuth(true);
+      })
+      .catch((error) => console.log(error));
   }
 
   return (
     <div className={styles.signup}>
       <form className={styles.signupForm} onSubmit={(e) => handleLogin(e)}>
-        {/* <pre>{JSON.stringify(user, null, 2)}</pre> */}
+        <pre>{JSON.stringify(user, null, 2)}</pre>
+        <pre>{JSON.stringify(isAuth, null, 2)}</pre>
         {/* {!user ? ( */}
         <div className={styles.contentContainer}>
           <h2>Welcome!</h2>

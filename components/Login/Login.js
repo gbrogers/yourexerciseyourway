@@ -69,10 +69,10 @@ export default function Login() {
           <button className={styles.loginBtn} type="submit">
             Login
           </button>
-              <div className={styles.alternative}>
+          <div className={styles.alternative}>
             <p className={styles.alternativeWords}>Already have an account? </p>
             <b className={styles.toSignupBtn}>
-              <Link href="/login">Log in</Link>
+              <Link href="/signup">Sign up</Link>
             </b>
           </div>
         </div>
