@@ -1,29 +1,24 @@
 .container {
-  // background-image: url(../../public/images/hero.jpg);
-  background-image: url(../../public/images/vball_sunset.jpg);
+  padding: 30px;
+  background-image: url(../../public/images/sunsetRun.jpg);
   height: 100vh;
-  // background-color: aquamarine;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
-  // padding: 30px;
+  background-position: top;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
-.overlay {
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
-  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-}
+
 .heroContent {
-  padding: 50px;
+  border-radius: 40px 5px;
+  margin-left: 30px;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  max-width: 700px;
 }
 .mainTitle {
   margin: 0;
@@ -42,8 +37,8 @@
 
 @media screen and (min-width: 450px) {
   .heroContent {
+    max-width: 40%;
     align-items: flex-start;
-    max-width: 700px;
   }
   .mainTitle,
   .heroUnderTitle {

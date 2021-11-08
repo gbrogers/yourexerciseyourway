@@ -1,0 +1,60 @@
+.login {
+    background-image: url(../../public/images/biker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    input {
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+  }
+  
+  .loginForm {
+    background-color: rgba(0, 0, 0, 0.733);
+    border-radius: 5px 20px;
+    padding: 50px;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: #f1a32d;
+      margin: 0px;
+      font-size: 1.9em;
+    }
+
+    p {
+      margin: 5px;
+    }
+  }
+  .loginBtn {
+    background-color: #f1a32d;
+    padding: 7px 12px;
+    border-radius: 5px;
+    border: none;
+    // margin-top: 10px;
+    width: 80%;
+  }
+  .alternative {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .alternativeWords {
+    color: #f1a32d;
+    margin: 5px;
+    font-size: 0.7em;
+  }
+  .toSignupBtn {
+    font-size: 0.7em;
+  }
+  

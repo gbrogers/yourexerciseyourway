@@ -69,12 +69,12 @@ export default function Login() {
           <button className={styles.loginBtn} type="submit">
             Login
           </button>
-          <p className={styles.alternative}>
-            New to the app?{" "}
-            <b>
-              <Link href="/signup">Sign Up</Link>
+              <div className={styles.alternative}>
+            <p className={styles.alternativeWords}>Already have an account? </p>
+            <b className={styles.toSignupBtn}>
+              <Link href="/login">Log in</Link>
             </b>
-          </p>
+          </div>
         </div>
         {/* ) : (
           <div className={styles.loggedIn}>

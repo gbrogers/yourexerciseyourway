@@ -1,12 +1,15 @@
 .container {
-  border: solid #c7c6c6 0.5px;
+  // border: solid black 0.5px;
   background-color: #f4f4f4;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 25px;
   margin: 20px;
   margin-bottom: 10px;
+  // color: white;
+  box-shadow: 5px 5px 7px rgb(117, 117, 117);
 }
 
 .cardDescription {

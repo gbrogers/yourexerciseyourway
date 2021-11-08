@@ -1,6 +1,5 @@
 import Login from "../../components/Login/Login";
 import Head from "next/head";
-import Footer from "../../components/Footer/Footer";
 export default function LoginPage() {
   return (
     <div>
@@ -13,7 +12,7 @@ export default function LoginPage() {
       <main>
         <Login />
       </main>
-      <Footer />
+
     </div>
   );
 }
