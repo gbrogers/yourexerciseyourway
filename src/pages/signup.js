@@ -1,6 +1,5 @@
 import SignUp from "../../components/SignUp/SignUp";
 import Head from "next/head";
-import Footer from "../../components/Footer/Footer";
 export default function SignUpPage() {
   return (
     <div>
@@ -13,7 +12,6 @@ export default function SignUpPage() {
       <main>
         <SignUp />
       </main>
-      <Footer />
     </div>
   );
 }

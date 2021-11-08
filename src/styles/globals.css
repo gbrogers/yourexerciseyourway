@@ -25,6 +25,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 @media screen and (min-width: 600px) {

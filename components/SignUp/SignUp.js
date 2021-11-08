@@ -1,9 +1,12 @@
 import styles from "./SignUp.module.scss";
 import { useRef, useContext } from "react";
-// import axios from "axios";
+// import prisma from "../lib/prisma";
 import Link from "next/link";
 // import { UserContext } from "../../UserContext";
 // import { AuthContext } from "../../AuthContext";
+
+//make instance of prisma
+// let prisma = new prisma
 
 export default function SignUp() {
   //   const { user, setUser } = useContext(null);
@@ -16,9 +19,10 @@ export default function SignUp() {
 
   async function handleLogin(e) {
     e.preventDefault();
+    console.log('submitted.')
 
-    // console.log(email.current.value);
-    // console.log(password.current.value);
+    console.log(email.current.value);
+    console.log(password.current.value);
 
     const credentials = {
       email: email.current.value,
@@ -27,7 +31,9 @@ export default function SignUp() {
       lname: lname.current.value,
     };
 
-    // console.log({ credentials });
+    console.log({ credentials });
+
+
 
     // await axios
     //   .post("/api/authenticate/signup", credentials)
